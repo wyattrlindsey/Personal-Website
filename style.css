@@ -63,7 +63,7 @@ html, body {
 }
 
 .line {
-	width: 500px;
+	width: 30em;
 	height: 3px;
 	background-color: white;
 }
@@ -94,9 +94,10 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-left: 3em;
+	padding: 3em;
 	width: 30%;
 	height: 30%;
+	flex: 50%;
 }
 
 .description {
@@ -106,8 +107,15 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	color: #505050;
-	font-size: 1.5rem;
+	font-size: 1.5vw;
 	padding: 3em;
+	flex: 50%;
+}
+
+@media (max-width: 800px) {
+	.info {
+	  flex-direction: column;
+	}
 }
 
 .footer {
