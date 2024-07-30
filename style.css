@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #e4e4e4;
+}
+
+/* Style the top navigation bar */
+.navbar {
+	overflow: hidden; /* Hide overflow */
+	background-color: #505050; /* Dark background color */
+	position: sticky;
+	top: 0;
+    z-index: 9999;
+}
+  
+/* Style the navigation bar links */
+.navbar a {
+	float: right; /* Make sure that the links stay side-by-side */
+	display: block; /* Change the display to block, for responsive reasons (see below) */
+	color: #e4e4e4; /* White text color */
+	text-align: center; /* Center the text */
+	padding: 30px 20px; /* Add some padding */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px;
+}
+  
+.navbar a.left {
+	float: left; /* Float a link to the left */
+}
+  
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+	background-color: #e4e4e4; 
+	color: #505050; 
+}
+
+/* Increase the font size of the <h1> element */
+.name {
+	text-align: center !important;
+	color: white;
+	text-shadow: 1px 1px 2px #333;
+	height: 100vh;
+	background-color: #9AC791;
+	position: relative;
+	margin: 0;
+	justify-content: center !important;
+	align-items: center !important;
+	display: flex !important;
+	flex-direction: column !important;
+	flex: auto;
+}
+
+.name h1 {
+	font-size: 80px;
+	font-weight: normal;
+	margin: 0px 0px 10px 0px;
+}
+
+.name p {
+	font-size: 55px;
+	margin: 10px 0px 0px 0px;
+}
+
+.line {
+	width: 500px;
+	height: 3px;
+	background-color: white;
+}
+
+.about {
+	text-align: center;
+	background-color: #e4e4e4;
+	margin: 0;
+	padding: 0;
+	color: #505050;
+	font-size: large;
+	padding: 20px 0px;
+}
+
+.info {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	justify-content: space-between;
+    flex-direction: row;
+	background-color: #e4e4e4;
+	color: #505050;
+}
+
+.photo {
+	flex-grow: 0;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 3em;
+	width: 30%;
+	height: 30%;
+}
+
+.description {
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #505050;
+	font-size: 1.5rem;
+	padding: 3em;
+}
+
+.footer {
+	padding: 20px; /* Some padding */
+	text-align: center; /* Center text*/
+	background: #505050; /* Grey background */
+	color: #e4e4e4;
+	font-size: large;
+}
+
+.contact {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+	flex-wrap: wrap;
+    gap: 1.5rem;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.link {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+	text-decoration: none;
+	color: #e4e4e4 !important;
+	padding: 10px;
+}
+
+.middle {
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+.linkIcon {
+	flex-grow: 0;
+    align-self: center;
+	height: auto;
+    max-width: 3em;
+}
