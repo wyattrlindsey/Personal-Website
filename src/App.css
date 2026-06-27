@@ -1,0 +1,194 @@
+/* Navigation Bar */
+.navbar {
+	overflow: hidden;
+	background-color: #505050;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	color: #e4e4e4;
+	text-align: center;
+	padding: 30px 20px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a.left {
+	float: left;
+}
+
+.navbar a:hover {
+	background-color: #e4e4e4;
+	color: #505050;
+}
+
+/* Hero Section */
+.name {
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 2px #333;
+	height: 100vh;
+	background-color: #9AC791;
+	position: relative;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+
+.name h1 {
+	font-size: 80px;
+	font-weight: normal;
+	margin: 0px 0px 10px 0px;
+}
+
+.name p {
+	font-size: 55px;
+	margin: 10px 0px 0px 0px;
+}
+
+.line {
+	width: 30em;
+	height: 3px;
+	background-color: white;
+}
+
+/* About Section */
+.about {
+	text-align: center;
+	background-color: #e4e4e4;
+	margin: 0;
+	padding: 0;
+	color: #505050;
+	font-size: large;
+	padding: 20px 0px;
+}
+
+.info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: #e4e4e4;
+	color: #505050;
+	padding: 0 40px;
+}
+
+.photo {
+	flex-grow: 0;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3em;
+	width: 30%;
+	height: 30%;
+	flex: 50%;
+	border-radius: 8px;
+}
+
+.description {
+	flex: 50%;
+	padding: 0 2em;
+	font-size: 18px;
+	line-height: 1.6;
+	text-align: left;
+}
+
+/* Footer/Contact Section */
+.footer {
+	text-align: center;
+	background-color: #e4e4e4;
+	margin: 0;
+	padding: 40px 0;
+	color: #505050;
+}
+
+.footer h1 {
+	margin-bottom: 30px;
+}
+
+.contact {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.contact li {
+	margin: 0;
+}
+
+.contact li.middle {
+	margin: 0 0;
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	color: #505050;
+	transition: transform 0.3s;
+}
+
+.link:hover {
+	transform: translateY(-5px);
+}
+
+.linkIcon {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+	object-fit: contain;
+}
+
+.linkText {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	.name h1 {
+		font-size: 50px;
+	}
+
+	.name p {
+		font-size: 35px;
+	}
+
+	.info {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.photo {
+		width: 100%;
+		flex: 100%;
+	}
+
+	.description {
+		flex: 100%;
+		padding: 1em 0;
+	}
+
+	.navbar a {
+		padding: 15px 10px;
+		font-size: 16px;
+	}
+
+	.contact {
+		gap: 20px;
+	}
+}
