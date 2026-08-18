@@ -1,27 +1,29 @@
 interface NavbarProps {}
 
+import { NavLink } from 'react-router-dom'
+
 export default function Navbar({}: NavbarProps) {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
+  const linkClass = ({ isActive }: { isActive: boolean }) =>
+    isActive ? 'navLink active' : 'navLink'
 
   return (
-    <nav className="navbar">
-      <a href="#top" className="left" onClick={() => scrollToSection('top')}>
-        Wyatt Lindsey
-      </a>
-      <a href="#bottom" onClick={() => scrollToSection('bottom')}>
-        Contact
-      </a>
-      <a href="#projects" onClick={() => scrollToSection('projects')}>
-        Projects
-      </a>
-      <a href="#aboutMe" onClick={() => scrollToSection('aboutMe')}>
-        About
-      </a>
-    </nav>
+    <header className="navbar">
+      <div className="container">
+        <NavLink to="/" className="brand">
+          Wyatt Lindsey
+        </NavLink>
+        <nav className="navLinks">
+          <NavLink to="/about" className={linkClass}>
+            About
+          </NavLink>
+          <NavLink to="/projects" className={linkClass}>
+            Projects
+          </NavLink>
+          <NavLink to="/contact" className={linkClass}>
+            Contact
+          </NavLink>
+        </nav>
+      </div>
+    </header>
   )
 }

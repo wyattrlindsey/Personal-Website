@@ -6,28 +6,36 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wyattrlindsey/Personal-Website.git"
   },
-  "keywords": ["portfolio", "react", "typescript"],
+  "keywords": [
+    "portfolio",
+    "react",
+    "typescript"
+  ],
   "author": "Wyatt Lindsey",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wyattrlindsey/Personal-Website/issues"
   },
-  "homepage": "https://github.com/wyattrlindsey/Personal-Website#readme",
+  "homepage": "https://github.com/wyattrlindsey/Personal-Website",
   "dependencies": {
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.2"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
+    "gh-pages": "^6.3.0",
     "typescript": "^6.0.3",
     "vite": "^8.1.0"
   }
